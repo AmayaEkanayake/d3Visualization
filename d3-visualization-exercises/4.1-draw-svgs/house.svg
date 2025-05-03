@@ -1,0 +1,63 @@
+<svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Sky -->
+    <rect x="0" y="0" width="500" height="250" fill="#87CEEB" />
+    
+    <!-- Sun -->
+    <circle cx="400" cy="80" r="30" fill="#FFD700" />
+    
+    <!-- Ground -->
+    <rect x="0" y="250" width="500" height="150" fill="#228B22" />
+    
+    <!-- House structure -->
+    <rect x="100" y="150" width="200" height="150" fill="#F5DEB3" stroke="black" stroke-width="2" />
+    
+    <!-- Roof -->
+    <polygon points="100,150 200,75 300,150" fill="#8B4513" stroke="black" stroke-width="2" />
+    
+    <!-- Door -->
+    <rect x="175" y="225" width="50" height="75" fill="#8B4513" stroke="black" stroke-width="2" />
+    
+    <!-- Door Knob -->
+    <circle cx="215" cy="260" r="5" fill="#FFD700" />
+    
+    <!-- Windows - group element example -->
+    <g id="windows">
+        <!-- Left Window -->
+        <rect x="125" y="175" width="40" height="40" fill="#B0E0E6" stroke="black" stroke-width="2" />
+        <!-- Window panes -->
+        <line x1="125" y1="195" x2="165" y2="195" stroke="black" stroke-width="1" />
+        <line x1="145" y1="175" x2="145" y2="215" stroke="black" stroke-width="1" />
+        
+        <!-- Right Window -->
+        <rect x="235" y="175" width="40" height="40" fill="#B0E0E6" stroke="black" stroke-width="2" />
+        <!-- Window panes -->
+        <line x1="235" y1="195" x2="275" y2="195" stroke="black" stroke-width="1" />
+        <line x1="255" y1="175" x2="255" y2="215" stroke="black" stroke-width="1" />
+    </g>
+    
+    <!-- Garden elements -->
+    <!-- Flower 1 -->
+    <circle cx="75" cy="300" r="10" fill="red" />
+    <circle cx="75" cy="300" r="5" fill="yellow" />
+    <line x1="75" y1="310" x2="75" y2="330" stroke="green" stroke-width="2" />
+    
+    <!-- Flower 2 -->
+    <circle cx="375" cy="320" r="10" fill="purple" />
+    <circle cx="375" cy="320" r="5" fill="yellow" />
+    <line x1="375" y1="330" x2="375" y2="350" stroke="green" stroke-width="2" />
+    
+    <!-- Tree -->
+    <rect x="425" y="200" width="15" height="100" fill="#8B4513" />
+    <circle cx="432" cy="180" r="30" fill="darkgreen" />
+    
+    <!-- Path for a walkway -->
+    <path d="M 175 325 C 200 300, 225 350, 250 325" stroke="#8B7355" stroke-width="10" fill="none" />
+    
+    <!-- Text element -->
+    <text x="185" y="350" font-family="Arial" font-size="16" fill="black">Home Sweet Home</text>
+    
+    <!-- Coordinates annotation example (for Step 2) -->
+    <text x="100" y="140" font-family="Arial" font-size="10" fill="red">x=100, y=150</text>
+    <text x="300" y="140" font-family="Arial" font-size="10" fill="red">x=300, y=150</text>
+    <text x="200" y="65" font-family="Arial" font-size="10" fill="red">x=200, y=75</text>
+</svg>

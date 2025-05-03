@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3 Bar Chart with Labels</title>
+    
+    <!-- D3 library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        
+        .responsive-svg-container {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 800px;
+            min-width: 300px;
+        }
+        
+        .bar {
+            fill: green;
+        }
+        
+        .bar:hover {
+            fill: darkgreen;
+        }
+        
+        .bar-label {
+            font-size: 12px;
+            fill: white;
+        }
+        
+        .count-label {
+            font-size: 12px;
+            fill: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>TV Sales Dashboard</h1>
+    
+    <p style="text-align: center;">This chart shows TV sales count by brand with proper labels.</p>
+    
+    <!-- Container for our SVG -->
+    <div class="responsive-svg-container"></div>
+    
+    <!-- Your D3 script -->
+    <script src="script.js"></script>
+</body>
+</html>

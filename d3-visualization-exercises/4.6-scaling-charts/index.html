@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scalable D3 Bar Chart</title>
+    
+    <!-- D3 library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        
+        .responsive-svg-container {
+            margin: auto;
+            display: block;
+            width: 100%;
+            max-width: 800px;
+            min-width: 300px;
+        }
+        
+        .bar {
+            fill: steelblue;
+        }
+        
+        .bar:hover {
+            fill: darkblue;
+        }
+        
+        .axis text {
+            font-size: 12px;
+        }
+        
+        .axis-label {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .controls {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+        
+        .slider-container {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .slider-container label {
+            flex: 0 0 100px;
+        }
+        
+        .slider-container input {
+            flex: 1;
+            margin: 0 10px;
+        }
+        
+        .slider-value {
+            flex: 0 0 60px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>TV Energy Consumption Dashboard</h1>
+    
+    <div class="controls">
+        <p>This chart demonstrates D3's scaling capabilities. Resize your browser window or use the slider below to see how the chart adapts.</p>
+        <div class="slider-container">
+            <label for="chart-width">Chart Width:</label>
+            <input type="range" id="chart-width" min="300" max="800" value="600">
+            <span id="width-value" class="slider-value">600px</span>
+        </div>
+    </div>
+    
+    <!-- Container for our SVG -->
+    <div class="responsive-svg-container"></div>
+    
+    <!-- Your D3 script -->
+    <script src="script.js"></script>
+</body>
+</html>

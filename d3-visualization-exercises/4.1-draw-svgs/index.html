@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Exercise 4.1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        svg {
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+        
+        .screenshot {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+        }
+        
+        h1, h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercise 4.1: SVG Shapes</h1>
+    
+    <h2>Step 1: Create a picture with SVG shapes</h2>
+    <!-- Insert your SVG here -->
+    <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+        <!-- Sky -->
+        <rect x="0" y="0" width="500" height="250" fill="#87CEEB" />
+        
+        <!-- Sun -->
+        <circle cx="400" cy="80" r="30" fill="#FFD700" />
+        
+        <!-- Ground -->
+        <rect x="0" y="250" width="500" height="150" fill="#228B22" />
+        
+        <!-- House structure -->
+        <rect x="100" y="150" width="200" height="150" fill="#F5DEB3" stroke="black" stroke-width="2" />
+        
+        <!-- Roof -->
+        <polygon points="100,150 200,75 300,150" fill="#8B4513" stroke="black" stroke-width="2" />
+        
+        <!-- Door -->
+        <rect x="175" y="225" width="50" height="75" fill="#8B4513" stroke="black" stroke-width="2" />
+        
+        <!-- Door Knob -->
+        <circle cx="215" cy="260" r="5" fill="#FFD700" />
+        
+        <!-- Windows - group element example -->
+        <g id="windows">
+            <!-- Left Window -->
+            <rect x="125" y="175" width="40" height="40" fill="#B0E0E6" stroke="black" stroke-width="2" />
+            <!-- Window panes -->
+            <line x1="125" y1="195" x2="165" y2="195" stroke="black" stroke-width="1" />
+            <line x1="145" y1="175" x2="145" y2="215" stroke="black" stroke-width="1" />
+            
+            <!-- Right Window -->
+            <rect x="235" y="175" width="40" height="40" fill="#B0E0E6" stroke="black" stroke-width="2" />
+            <!-- Window panes -->
+            <line x1="235" y1="195" x2="275" y2="195" stroke="black" stroke-width="1" />
+            <line x1="255" y1="175" x2="255" y2="215" stroke="black" stroke-width="1" />
+        </g>
+        
+        <!-- Garden elements -->
+        <!-- Flower 1 -->
+        <circle cx="75" cy="300" r="10" fill="red" />
+        <circle cx="75" cy="300" r="5" fill="yellow" />
+        <line x1="75" y1="310" x2="75" y2="330" stroke="green" stroke-width="2" />
+        
+        <!-- Flower 2 -->
+        <circle cx="375" cy="320" r="10" fill="purple" />
+        <circle cx="375" cy="320" r="5" fill="yellow" />
+        <line x1="375" y1="330" x2="375" y2="350" stroke="green" stroke-width="2" />
+        
+        <!-- Tree -->
+        <rect x="425" y="200" width="15" height="100" fill="#8B4513" />
+        <circle cx="432" cy="180" r="30" fill="darkgreen" />
+        
+        <!-- Path for a walkway -->
+        <path d="M 175 325 C 200 300, 225 350, 250 325" stroke="#8B7355" stroke-width="10" fill="none" />
+        
+        <!-- Text element -->
+        <text x="185" y="350" font-family="Arial" font-size="16" fill="black">Home Sweet Home</text>
+        
+        <!-- Coordinates annotation example (for Step 2) -->
+        <text x="100" y="140" font-family="Arial" font-size="10" fill="red">x=100, y=150</text>
+        <text x="300" y="140" font-family="Arial" font-size="10" fill="red">x=300, y=150</text>
+        <text x="200" y="65" font-family="Arial" font-size="10" fill="red">x=200, y=75</text>
+    </svg>
+    
+    <h2>Step 2: SVG Coordinate System</h2>
+    <p>In the SVG above, I've annotated key coordinates in red to show how the coordinate system works. 
+       The origin (0,0) is at the top-left corner. X increases to the right, and Y increases downward.</p>
+    <!-- Insert your annotated screenshot here -->
+    <p><em>Note: Take a screenshot of your SVG with coordinates and save it as coordinates-screenshot.png</em></p>
+    
+    <h2>Step 3: Customized Picture</h2>
+    <p>I've customized the picture by adding:</p>
+    <ul>
+        <li>A sun in the sky</li>
+        <li>Flowers in the garden</li>
+        <li>A tree</li>
+        <li>A curved path for a walkway</li>
+        <li>Text label "Home Sweet Home"</li>
+    </ul>
+    
+    <h2>Step 4: Group Element</h2>
+    <p>I've used a group element (&lt;g id="windows"&gt;) to contain both windows of the house. 
+       This demonstrates how related elements can be grouped together.</p>
+    
+    <h2>Step 5: DOM View</h2>
+    <p>Here's a screenshot of the SVG in the browser's Developer Tools, showing the DOM structure:</p>
+    <!-- Insert your DOM screenshot here -->
+    <p><em>Note: Take a screenshot of your DOM structure and save it as dom-screenshot.png</em></p>
+</body>
+</html>
