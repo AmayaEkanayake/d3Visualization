@@ -54,7 +54,7 @@
     <path d="M 175 325 C 200 300, 225 350, 250 325" stroke="#8B7355" stroke-width="10" fill="none" />
     
     <!-- Text element -->
-    <text x="185" y="350" font-family="Arial" font-size="16" fill="black">Home Sweet Home</text>
+    <text x="185" y="350" font-family="Arial" font-size="16" fill="black">4.1 My Home</text>
     
     <!-- Coordinates annotation example (for Step 2) -->
     <text x="100" y="140" font-family="Arial" font-size="10" fill="red">x=100, y=150</text>
